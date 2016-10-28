@@ -15,5 +15,5 @@ link_to https://trello.com/b/L65G5HfJ/welcome-board
 
 
 #Wireframes
-![Alt text](assets/wireframe.jpg)
-![Alt text](assets/wireframe2.jpg)
+![Alt text](./assets/wireframe.JPG)
+![Alt text](./assets/wireframe2.JPG)
