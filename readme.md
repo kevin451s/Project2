@@ -17,3 +17,6 @@ link_to https://trello.com/b/L65G5HfJ/welcome-board
 #Wireframes
 ![Alt text](./assets/wireframe.JPG)
 ![Alt text](./assets/wireframe2.JPG)
+
+#MVP
+My goal for MVP is to have a fully functional site where users can at least login and view photos.
