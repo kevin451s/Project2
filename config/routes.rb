@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+  root 'photos#index'
 
   get 'photos/' => 'photos#index'
   get 'photos/new' => 'photos#new', as: :new_photo
   get 'photos/:id' => 'photos#show'
+  post 'photos/' => 'photos#create'
   get 'photos/:id/edit' => 'photos#edit', as: :edit_photo
 
   get 'users/' => 'users#index'

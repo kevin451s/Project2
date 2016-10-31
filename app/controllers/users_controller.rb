@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   end
 
   def show
-
+    @user = User.find(params[:id])
   end
 
   def edit
@@ -23,10 +23,24 @@ class UsersController < ApplicationController
       render :new
     end
   end
-  private
+  def update
+    if @user.update_attributes(user_params)
+      redirect_to @user
+    else
+      render :edit
+    end
+  end
+  def destroy
+    @user.destroy
+    redirect_to users_path
+  end
 
+  private
   def user_params
     params.require(:user).permit(:name, :email, :password, :password_confirmation, :description)
+  end
+  def set_user
+    @user = User.find(params[:id])
   end
 
 end
