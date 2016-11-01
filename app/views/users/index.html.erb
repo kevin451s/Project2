@@ -1,12 +1,14 @@
-<h1>Users</h1>
+<h1>Users # INDEX</h1>
 <ul>
   <% @users.each do |user| %>
     <li><%= user.name %>
     <%  if user.photos %>
     <% user.photos.each do |photo| %>
-    <%= image_tag photo.image.url(:small) %>
+    <%= image_tag photo.image.url(:large) %>
+    <%= image_tag photo.description %>
     <% end %>
     <% end %>
     </li>
   <% end %>
 </ul>
+<%= link_to 'Add a new photo', new_photo_path %>

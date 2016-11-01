@@ -18,8 +18,9 @@
         </div>
     </nav>
     <% @photos.each do |picture| %>
-      <%= image_tag picture.image.url(:small) %>
+      <%= image_tag picture.image.url(:large) %>
     <% end %>
+    <%= link_to 'Add a new photo', new_photo_path %>
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   </body>
 </html>
