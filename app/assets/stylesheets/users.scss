@@ -1,3 +1,67 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@media (min-width: 400px) {
+  html, body {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .nav ul {
+    margin: 0 0 30px;
+    text-align: center;
+  }
+
+  .nav li {
+    -webkit-transition:color 0.25s;
+    transition:color 0.25s;
+  }
+
+  .nav li:hover {
+    color: white;
+    cursor: pointer;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+  }
+
+
+  .row {
+    margin-top: 0;
+  }
+  .row .col-md-4 img {
+    height: 720px;
+    width: 480px;
+  }
+  .img-responsive {
+    margin-bottom: 20px;
+  }
+  .header {
+    // margin: 0 auto;
+    position: relative;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    background-color: white;
+    height: 140px;
+    text-align: center;
+  }
+  .nav li {
+    color: black;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0 10px;
+
+  }
+  .footer {
+    color: #31363d;
+    font-size: 10px;
+    height: 70px;
+    line-height: 70px;
+    padding-right: 40px;
+    text-align: right;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+  }
+
+}

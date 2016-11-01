@@ -4,6 +4,7 @@
     <li><%= user.name %>
     <%  if user.photos %>
     <% user.photos.each do |photo| %>
+    <%= link_to 'Update photos', edit_photo_path(photo)  %>
     <%= image_tag photo.image.url(:large) %>
     <%= image_tag photo.description %>
     <% end %>
@@ -12,3 +13,4 @@
   <% end %>
 </ul>
 <%= link_to 'Add a new photo', new_photo_path %>
+<%= link_to 'All Photos', photos_path %>

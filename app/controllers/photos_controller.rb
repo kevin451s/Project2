@@ -1,4 +1,5 @@
 class PhotosController < ApplicationController
+  before_action :set_photo, only: [:destroy, :show, :edit, :update]
   def index
     @photos = Photo.all
   end
@@ -8,6 +9,7 @@ class PhotosController < ApplicationController
   end
 
   def edit
+    @photo = Photo.find(params[:id])
   end
 
   def new
@@ -24,7 +26,7 @@ class PhotosController < ApplicationController
   end
 
   def update
-    if @photo.update_attributes(garment_params)
+    if @photo.update_attributes(photo_params)
       redirect_to @photo
     else
       render :edit

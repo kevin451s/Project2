@@ -3,13 +3,14 @@ Rails.application.routes.draw do
 
   get 'photos/' => 'photos#index'
   get 'photos/new' => 'photos#new', as: :new_photo
-  get 'photos/:id' => 'photos#show'
+  get 'photos/:id' => 'photos#show', as: :photo
   post 'photos/' => 'photos#create'
   get 'photos/:id/edit' => 'photos#edit', as: :edit_photo
+  patch 'photos/:id' => 'photos#update'
 
   get 'users/' => 'users#index'
   get 'users/new' => 'users#new', as: :new_user
-  get 'users/:id' => 'users#show'
+  get 'users/:id' => 'users#show', as: :user
   post 'users/' => 'users#create'
   get 'users/:id/edit' => 'users#edit'
   patch 'users/:id' => 'users#update'
