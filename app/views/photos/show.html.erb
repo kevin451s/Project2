@@ -3,4 +3,9 @@
   <h1>
     My Picture
   <h1>
+    <%= image_tag @photo.image.url(:large) %>
+    <%= @photo.description %>
+    <% if current_user == @photo.user %>
+    <%= link_to 'Delete this Photo', @photo, method: :delete, data: {confirm: 'Are you sure?'} %>
+    <% end %>
 </div>
