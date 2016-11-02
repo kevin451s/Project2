@@ -27,3 +27,17 @@ body .container {
 .footer {
   background-color: #cccdce;
 }
+// CSS to make buttons hover
+.nav {
+  -webkit-transition:color 0.25s;
+  transition:color 0.25s;
+  color: black;
+}
+
+.nav:hover {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}

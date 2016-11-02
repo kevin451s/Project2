@@ -7,4 +7,5 @@ class Photo < ApplicationRecord
   }
 
   validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
+  validates_attachment_presence :image
 end

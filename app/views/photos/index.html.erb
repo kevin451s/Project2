@@ -10,18 +10,18 @@
     <div class="nav">
       <div class="container">
       	<ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Sign Up</li>
-          <li>Login</li>
+          <li><%= link_to 'Home', photos_path, class: 'nav' %></li>
+          <li><%= link_to 'Users', users_path, class: 'nav' %></li>
+
         </ul>
       </div>
     </div>
 
-    <div class="container">
+    <!-- <div class="container">
       <div class="row">
 				<div class="col-md-4">
           <img src="https://s3.amazonaws.com/codecademy-content/projects/red-eye-photography/p1.jpg" class="img-responsive"/>
+
         </div>
         <div class="col-md-4">
           <img src="https://s3.amazonaws.com/codecademy-content/projects/red-eye-photography/p2.jpg" class="img-responsive"/>
@@ -41,8 +41,17 @@
         <div class="col-md-4">
           <img src="https://s3.amazonaws.com/codecademy-content/projects/red-eye-photography/p6.jpg" class="img-responsive"/>
         </div>
-      </div>
+      </div> -->
+    <!-- </div> -->
+    <% @photos.in_groups_of(3, false).each do |group| %>
+    <div class="row">
+      <% group.each do |photo| %>
+
+      <%= link_to (image_tag photo.image.url(:large), class: 'col-md-4'), photo_path(photo) %>
+
+      <% end %>
     </div>
+    <% end %>
     <div class="footer">
       <p>
         Copyright by Kevin
