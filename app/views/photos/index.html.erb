@@ -13,7 +13,7 @@
           <li><%= link_to 'Home', photos_path, class: 'nav' %></li>
           <li><%= link_to 'Upload', new_photo_path, class: 'nav' %></li>
           <li><%= link_to 'My Account', user_path(current_user), class: 'nav' if current_user %></li>
-          <li><%= link_to 'Sign Up', new_user_path, class: 'nav' if !current_user %></li>
+          <!-- <li><%#= link_to 'Sign Up', new_user_path, class: 'nav' if !current_user %></li> -->
         </ul>
       </div>
     </div>
@@ -48,7 +48,7 @@
     <div class="row">
       <% group.each do |photo| %>
 
-      <%= link_to (image_tag photo.image.url(:large), class: 'col-md-4'), photo_path(photo) %>
+      <%= link_to (image_tag photo.image.url(:large), class: 'col-md-4 photoIndex'), photo_path(photo) %>
 
       <% end %>
     </div>
