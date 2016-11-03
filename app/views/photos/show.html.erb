@@ -4,6 +4,7 @@
     My Picture
   <h1>
     <%= image_tag @photo.image.url(:large) %>
+    <br>
     <%= @photo.description %>
     <% if current_user == @photo.user %>
       <div class='photoShowButton'>
