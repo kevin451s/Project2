@@ -1,4 +1,4 @@
-<h1>Users#show</h1>
+<h1 class="header">Users Showpage</h1>
  <%= @user.name %>
- <%= link_to "Edit this User.", edit_user_path %>
- <%= link_to "Delete this User", user_path, method: :delete %>
+ <%= link_to "Edit this User.", edit_user_path, class: 'btn btn-success' %>
+ <%= link_to "Delete this User", user_path, method: :delete, class: 'btn btn-danger' %>

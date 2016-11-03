@@ -1,6 +1,6 @@
-<h1>Users#edit</h1>
+<h1>Users</h1>
 <% if current_user == @user %>
 <%= render 'form' %>
-<%= link_to 'Delete this User', @user, method: :delete %>
-<%= link_to 'All Photos', photos_path %>
+<%= link_to 'Delete this User', @user, method: :delete, class: 'btn btn-primary' %>
+<%= link_to 'All Photos', photos_path, class: 'btn btn-success' %>
 <% end %>

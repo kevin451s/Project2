@@ -41,3 +41,11 @@ body .container {
   -webkit-transition: color 1s;
   transition: color 1s;
 }
+// CSS for Photo Show Page
+#photoShow {
+  text-align: center;
+}
+.photoShowButton {
+  display: inline-block;
+  float: left;
+}

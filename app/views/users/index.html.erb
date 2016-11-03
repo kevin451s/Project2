@@ -14,7 +14,8 @@
     <div class="btn btn-success">
       <%= link_to 'All Photos', photos_path %>
     </div>
-    <div class="btn btn-success">
-      <%= link_to 'Make a new user', new_user_path %>
-    </div>
+
+      <%= link_to 'Make a new user', new_user_path, class: 'btn btn-success' if !current_user %>
+
+      <%= link_to 'My account', user_path(current_user), class: 'btn btn-primary' if current_user %>
   </div>
