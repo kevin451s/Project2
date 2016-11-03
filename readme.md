@@ -1,7 +1,5 @@
 #Project 2
-  For my second Project, I will be designing a photo gallery to display photos. Users will be able to sign and browse through photos I have uploaded to a gallery. Users will
-  also be able to like and share photos to their friends.
-
+  For my second Project, I will be designing a photo gallery to display photos. Users will be able to sign in and browse through photos I have uploaded to a gallery. Users will 
 
 #Trello Board
 link_to https://trello.com/b/L65G5HfJ/welcome-board
