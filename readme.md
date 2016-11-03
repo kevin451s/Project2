@@ -16,8 +16,11 @@ link_to https://trello.com/b/L65G5HfJ/welcome-board
 ![Alt text](./assets/first.jpg)
 ![Alt text](./assets/second.jpg)
 
+#ERD
+![Alt Text](./assets/erd.jpg)
+
 #MVP
 My goal for MVP is to have a fully functional site where users can at least login and view photos.
 
 #Approach Taken
-I first started making my Wireframes. I had an idea of what I wanted my site to look like. I then began on my ERD's. This would give me direction and a starting place to begin making my app. After making my ERD, I began making my controllers and models. After making the controller and models, I began to work on my routes. 
+I first started making my Wireframes. I had an idea of what I wanted my site to look like. I then began on my ERD's. This would give me direction and a starting place to begin making my app. After making my ERD, I began making my controllers and models. After making the controller and models, I began to work on my routes.
