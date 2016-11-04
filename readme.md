@@ -27,7 +27,6 @@ My goal for MVP is to have a fully functional site where users can at least logi
 I first started making my Wireframes. I had an idea of what I wanted my site to look like. I then began on my ERD's. This would give me direction and a starting place to begin making my app. After making my ERD, I began making my controllers and models. After making the controller and models, I began to work on my routes.
 
 #Installation Instructions
-To install game you must first
 1. Go to https://github.com/kevin451s/Project2 and download repository.
 2. Open terminal and cd into the directory containing the downloaded repository.
 3. Create a new database by typing and entering "rake db:create" in terminal.
